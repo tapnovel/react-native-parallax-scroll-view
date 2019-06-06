@@ -62,7 +62,7 @@ class ParallaxScrollView extends Component {
 			viewHeight: window.height,
 			viewWidth: window.width
 		}
-		this.scrollY = new Animated.Value(0)
+		this.scrollY = props.scrollY || new Animated.Value(0)
 		this._footerComponent = { setNativeProps() { } } // Initial stub
 		this._footerHeight = 0
 	}
